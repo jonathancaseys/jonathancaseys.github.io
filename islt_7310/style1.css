@@ -1,0 +1,19 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+
+nav>ul>li {
+    width: 100px
+    position: relative
+    background-color: lightblue;
+}
+
+nav>ul>li>ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
