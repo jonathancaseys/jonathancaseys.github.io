@@ -60,3 +60,8 @@ nav>ul>li:hover>ul{
     font-family: 'arial';
     color: rgb(8, 42, 105);
     font-size: 15px;
+
+    <style type="text/css">
+    <!--
+     .citation { margin-left: 40px; }
+    --
