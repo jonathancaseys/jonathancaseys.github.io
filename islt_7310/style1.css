@@ -56,3 +56,7 @@ nav>ul>li:hover>ul{
     display: block;
 }
         
+#one{
+    font-family: 'arial';
+    color: rgb(8, 42, 105);
+    font-size: 15px;
