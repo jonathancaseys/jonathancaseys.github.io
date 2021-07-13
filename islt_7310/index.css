@@ -1,5 +1,6 @@
-body {background-color: rgb(90, 94, 99);}
-body {font-family:"Roboto"}
+body {background-color: rgb(101, 114, 131);}
+
+.parent {font-size:80%;}
 
 .responsive {
     max-width: 100%;
@@ -93,3 +94,17 @@ body {font-family:"Roboto"}
         .div3 { grid-area: 5 / 1 / 6 / 6; }
         .div4 { grid-area: 2 / 6 / 6 / 7; }
       
+
+    /*media query for mobile*/
+
+    @media only screen and (max-device-width: 480px) {
+
+    }
+
+
+
+
+@media screen and (min-width: 500px) {
+    .parent {font-size: 150%;}
+}
+
