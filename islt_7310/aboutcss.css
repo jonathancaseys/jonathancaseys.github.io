@@ -15,10 +15,31 @@ p {
     height: auto;
   }
 
+img {
+    float: left;    
+     margin: 0 15px 0 0;
+     width: 30%;
+     height: auto;
+    }
+/*responsive video*/ 
 
-        
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 
         /* grid layout */ 
+
         body {
             margin: 40px;
           }
@@ -32,25 +53,20 @@ p {
               background-color:rgb(90, 94, 99);
               color: white;
           }
-      
-         
-      
-        
-        }
 
         .div1 { grid-area: 1 / 1 / 2 / 7; }
         .div2 { grid-area: 2 / 1 / 5 / 6; }
         .div3 { grid-area: 5 / 1 / 6 / 6; }
         .div4 { grid-area: 2 / 6 / 6 / 7; }
       
-
     /*media query for mobile*/
 
 
 
-    @media screen and (max-width: (560) {
+    @media screen and (max-width: 560) {
         .parent {
           font-size: 50%;
+          color: rgb(255, 0, 0)}
         }
       
 
@@ -58,4 +74,5 @@ p {
       @media screen and (max-width: 780) {
         .parent {
           font-size: 70%;
-
+          color: blue}
+        }
