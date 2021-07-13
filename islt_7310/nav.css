@@ -41,7 +41,7 @@ nav ul li ul {
 }
 nav ul li:hover ul {
     display: block;
-    background-color: #b5cde9;
+    background-color: white;
 }
 nav ul li ul li {
     width: 180px;
@@ -92,8 +92,8 @@ padding: 10px 10px 10px 10px;}
         padding: 10px;
         font-style: normal;
         font-size: 1.2em;
-        background-color: rgb(39, 19, 129);
-        color: rgb(20, 20, 20);
+        background-color: grey;
+        color: white;
     }
     #hamburgeritems {display: block;}
     #hamnav input:checked ~ #hamburgeritems {display: block;}

@@ -42,13 +42,13 @@ body {font-family:"Roboto"}
 
         /*format all navigation <a> elements*/
         nav a:link{
-            background-color: white;
+            background-color:grey;
         }
         nav a:hover, nav a:focus {
-            background-color: rgb(177, 176, 223);
+            background-color: white;
         }
         nav a:active{
-            background-color: rgb(109, 125, 221);
+            background-color: white;
         }
 
         /*position sub-menu or drop-down*/
