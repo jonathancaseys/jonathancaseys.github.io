@@ -1,4 +1,10 @@
 body {background-color: rgb(90, 94, 99);}
+body {font-family:"Roboto"}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
 
 
 /*set the active page class to any <li> that has the class*/
@@ -77,12 +83,7 @@ body {background-color: rgb(90, 94, 99);}
               color: white;
           }
       
-          .box {
-              background-color: #444;
-              color: #fff;
-              border-radius: 5px;
-              padding: 20px;
-              font-size: 150%;
+         
       
         
         }
