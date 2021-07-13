@@ -2,8 +2,13 @@ body {background-color: rgb(101, 114, 131);}
 
 h1, h2, p {
     text-align: center;
-  }
-  
+ }
+h1 {
+    font-size:50px;
+}
+p {
+    padding: 25px 50px 75px 100px;
+      }
 
 .responsive {
     max-width: 100%;
@@ -80,9 +85,9 @@ h1, h2, p {
             .parent {
                 display: grid;
                 grid-template-columns: repeat(5, 1fr) 1.5fr;
-                grid-template-rows: 20px repeat(3, 1fr) 80px;
-                grid-column-gap: 10px;
-                grid-row-gap: 10px;
+                grid-template-rows: 10px repeat(4, 1fr) 80px;
+                grid-column-gap: 7px;
+                grid-row-gap: 7px;
               background-color:rgb(90, 94, 99);
               color: white;
           }
@@ -100,14 +105,13 @@ h1, h2, p {
 
     /*media query for mobile*/
 
-    @media only screen and (max-device-width: 480px) {
-
-    }
 
 
+    @media screen and (max-width: 480) {
+        .parent {
+          font-size: 30%;
+        }
+      
+      /* If the screen size is 600px wide or less*/
 
-
-@media screen and (min-width: 500px) {
-    .parent {font-size: 150%;}
-}
 
