@@ -1,0 +1,94 @@
+body {background-color: rgb(90, 94, 99);}
+
+
+/*set the active page class to any <li> that has the class*/
+        .active a:link {
+            background-color: rgb(90, 94, 99);
+        }
+        #hamburger {
+            display: none;
+        }
+
+        /*format and position the main navigation menu*/
+        nav {
+            top: 0px;   
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav>ul li {
+            position: relative; /*we must add a position to our main navigation bar so we can position a drop-down properly */
+            text-align: center;
+            font-weight: bold;
+            color: rgb(50, 52, 59);
+            float: left;
+        }
+        nav a {
+            text-decoration: none;
+            display: inline-block;
+            border: none;
+            padding: 15px 15px 15px 15px;
+            width: 150px; /*this is important to set so our drop-down doesn't go across the page*/
+            margin: 2px;
+        }
+
+        /*format all navigation <a> elements*/
+        nav a:link{
+            background-color: white;
+        }
+        nav a:hover, nav a:focus {
+            background-color: rgb(177, 176, 223);
+        }
+        nav a:active{
+            background-color: rgb(109, 125, 221);
+        }
+
+        /*position sub-menu or drop-down*/
+        nav ul>li ul {
+            position: absolute;
+            top: 100%;
+            display: none;
+        }
+        nav ul ul li {
+            float:none;
+        }
+
+        /*special hover to display the drop-down*/
+        nav>ul>li:hover>ul{
+            display: block;
+        }
+        /* Dropdown Button */
+
+
+        /* grid layout */ 
+        body {
+            margin: 40px;
+          }
+          
+            .parent {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr) 1.5fr;
+                grid-template-rows: 80px repeat(3, 1fr) 80px;
+                grid-column-gap: 7px;
+                grid-row-gap: 7px;
+              background-color:rgb(90, 94, 99);
+              color: white;
+          }
+      
+          .box {
+              background-color: #444;
+              color: #fff;
+              border-radius: 5px;
+              padding: 20px;
+              font-size: 150%;
+      
+        
+        }
+
+        .div1 { grid-area: 1 / 1 / 2 / 7; }
+        .div2 { grid-area: 2 / 1 / 5 / 6; }
+        .div3 { grid-area: 5 / 1 / 6 / 6; }
+        .div4 { grid-area: 2 / 6 / 6 / 7; }
+      
