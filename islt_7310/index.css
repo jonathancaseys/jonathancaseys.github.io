@@ -1,6 +1,9 @@
 body {background-color: rgb(101, 114, 131);}
 
-.parent {font-size:80%;}
+h1, h2, p {
+    text-align: center;
+  }
+  
 
 .responsive {
     max-width: 100%;
@@ -77,9 +80,9 @@ body {background-color: rgb(101, 114, 131);}
             .parent {
                 display: grid;
                 grid-template-columns: repeat(5, 1fr) 1.5fr;
-                grid-template-rows: 80px repeat(3, 1fr) 80px;
-                grid-column-gap: 7px;
-                grid-row-gap: 7px;
+                grid-template-rows: 20px repeat(3, 1fr) 80px;
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
               background-color:rgb(90, 94, 99);
               color: white;
           }
