@@ -9,6 +9,17 @@ p {
     padding: 25px 50px 75px 100px;
       }
 
+body {font-family: 'Roboto', sans-serif;
+      }
+
+
+h1 {
+  font-family: 'Mukta', sans-serif;
+      }
+    
+
+
+
 .responsive {
     max-width: 100%;
     height: auto;
