@@ -3,9 +3,8 @@ body {background-color: rgb(101, 114, 131);}
 h1, h2, p {
     text-align: center;
  }
-h1 {
-    font-size:50px;
-}
+
+
 p {
     padding: 25px 50px 75px 100px;
       }
@@ -62,17 +61,9 @@ img {
     /*media query for mobile*/
 
 
+    @media screen and (max-width: 720px) {
+      body {
+        font-size: 70%;
+      }
+    }
 
-    @media screen and (max-width: 560) {
-        .parent {
-          font-size: 50%;
-          color: rgb(255, 0, 0)}
-        }
-      
-
-
-      @media screen and (max-width: 780) {
-        .parent {
-          font-size: 70%;
-          color: blue}
-        }
