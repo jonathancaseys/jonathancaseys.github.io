@@ -72,7 +72,7 @@ img {
             .parent {
                 display: grid;
                 grid-template-columns: repeat(5, 1fr) 1.5fr;
-                grid-template-rows: 10px repeat(4, 1fr) 50px;
+                grid-template-rows: 10px repeat(4, 1fr) 20px;
                 grid-column-gap: 7px;
                 grid-row-gap: 7px;
               background-color:rgb(90, 94, 99);

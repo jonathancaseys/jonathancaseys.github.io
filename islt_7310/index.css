@@ -28,7 +28,8 @@ body {
 
 /*icons*/
 
-
+.icon { transition: all .2s ease-in-out; }
+.icon:hover { transform: scale(2); }
 
         
 
