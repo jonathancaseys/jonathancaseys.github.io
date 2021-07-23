@@ -89,8 +89,9 @@ footer{
 
 
     @media screen and (max-width: 720px) {
-        body {
+        .parent {
           font-size: 70%;
+          height: auto;
         }
       }
   
