@@ -1,6 +1,5 @@
 body {
   background-color: rgb(101, 114, 131);
-   size: 30pt;
   }
 
 h1, h2, p {
@@ -24,6 +23,7 @@ h1 {
 .div3{
   background-image: url("wavesfooter.jpg");
   background-color: #cccccc;
+  height: 200px;
  }
 
 
