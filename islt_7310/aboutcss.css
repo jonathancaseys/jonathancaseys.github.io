@@ -1,4 +1,7 @@
-body {background-color: rgb(101, 114, 131);}
+body {
+  background-color: rgb(101, 114, 131);
+   size: 30pt;
+  }
 
 h1, h2, p {
     text-align: center;
@@ -6,7 +9,7 @@ h1, h2, p {
 
 
 p {
-    padding: 25px 50px 75px 100px;
+  padding: 25px 50px 75px 100px;
       }
 
 body {font-family: 'Roboto', sans-serif;
@@ -30,20 +33,23 @@ h1 {
 
 
 .responsive {
-    max-width: 100%;
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     height: auto;
   }
 
-img {
-    float: left;    
-     margin: 0 15px 0 0;
-     width: 30%;
-     height: auto;
-    }
 
 .icon{
   width: 30px;
 }
+
+/*icons*/
+
+.icon { transition: all .2s ease-in-out; }
+.icon:hover { transform: scale(2); }
 
 
 /*responsive video*/ 
@@ -72,7 +78,7 @@ img {
             .parent {
                 display: grid;
                 grid-template-columns: repeat(5, 1fr) 1.5fr;
-                grid-template-rows: 10px repeat(4, 1fr) 20px;
+                grid-template-rows: 10px repeat(4, 1fr) 30px;
                 grid-column-gap: 7px;
                 grid-row-gap: 7px;
               background-color:rgb(90, 94, 99);
@@ -81,7 +87,7 @@ img {
 
         .div1 { grid-area: 1 / 1 / 2 / 7; }
         .div2 { grid-area: 2 / 1 / 5 / 6; }
-        .div3 { grid-area: 5 / 1 / 5 / 6; }
+        .div3 { grid-area: 5 / 1 / 5 / 8; }
         .div4 { grid-area: 2 / 6 / 6 / 7; }
       
     /*media query for mobile*/
@@ -90,8 +96,10 @@ img {
     @media screen and (max-width: 720px) {
       body {
         font-size: 70%;
+        height: auto;
       }
     }
+/*print query*/
 
 @media print {
   * {
@@ -119,7 +127,7 @@ img {
     }
 
     body{
-      page-break-after: none;
+      page-break-after: avoid;
       orphans:2;
       widows:2;
     }
