@@ -120,7 +120,8 @@ max-width: 25px;
       @media screen and (max-width: 900px) {
         .graphic {
           width: 60%,
-          height:auto;
+          
+        
         }
 
-  
+      }

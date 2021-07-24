@@ -66,6 +66,7 @@ body {
     @media screen and (max-width: 720px) {
       body {
         font-size: 70%;
+        padding:0px 0px 0px 0px;
       }
     }
 
