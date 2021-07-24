@@ -16,14 +16,16 @@ p {
   width: 16px;
 }
 
-.div3{
+footer{
   background-image: url("wavesfooter.jpg");
   background-color: #cccccc;
   height: 200px;
+  color:white;
 
  }
 .icon{
   width: 30px;
+  float: left;
 }
 
 .responsive {
