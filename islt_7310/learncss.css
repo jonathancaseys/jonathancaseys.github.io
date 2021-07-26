@@ -1,100 +1,125 @@
-body {background-color: rgb(101, 114, 131);}
+body {
+    background-color: rgb(101, 114, 131);
+}
 
-h1, h2, p {
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.parent {
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parent.image {
+    width: 55%;
+}
+
+.title {
+    font-size: 50px;
     text-align: center;
- }
-
-p {
-    padding: 25px 50px 75px 100px;
-      }
-
-a:visited{
-  color:white;
-  background:transparent;
-
+    color: white;
+    font-family: 'Mukta', sans-serif;
 }
-  
 
-a:link {
-  color: White;
-  text-align: center;
-  font-size: 22px;
-
-}
-a:visited{
-  color:white;
-  background: transparent;
-  text-align: center;
-  
-}
-.responsive {
-    max-width: 100%;
-    height: auto;
-  }
-  a:link {
-    color: White;
+.subtitle {
+    font-size: 35px;
     text-align: center;
-    font-size: 22px;
-  }
+    color: white;
+    font-family: 'Mukta', sans-serif;
+}
 
-  footer{
-    background-image: url("wavesfooter.jpg");
-    background-color: #cccccc;
-   }
-
-html {
+.text {
+    text-align: center;
+    color: white;
     font-family: 'Roboto', sans-serif;
 }
 
-
-img {
-  float: left;    
-   margin: 0 15px 0 0;
-   width: 70%;
-   height: auto;
-  }
-
-.icon{
-max-width: 25px;
-}
-  
-/*animations for  icons*/
-
-.icon { transition: all .2s ease-in-out; }
-.icon:hover { transform: scale(2); }
-
-
-
-footer{ 
-  color: white
+.image {
+    width: 350px;
+    height: auto;
 }
 
-  /* grid layout */ 
+.media-wrapper {
+    width: 25%;
+}
 
-  .parent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 7px;
-    grid-row-gap: 7px;
-    background-color:rgb(90, 94, 99);
-              color: white;
+.image-media-wrapper {
+    width: 40%;
+}
+
+.media {
+    width: 100%;
+    height: auto;
+}
+
+/*table css*/
+table.table {
+    border: 3px solid #000000;
+    width: 70%;
+    text-align: center;
+    color: black;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+}
+
+table.table td,
+table.table th {
+    border: 1px solid #D0E4F5;
+}
+
+table.table tbody td {
+    font-size: 14px;
+}
+
+table.table tr:nth-child(even) {
+    background: #D0E4F5;
+}
+
+table.table thead {
+    background: #D0E4F5;
+}
+
+table.table thead th {
+    font-weight: normal;
+    text-align: center;
+}
+
+/*media query for mobile*/
+@media screen and (max-width: 800px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
     }
-    
-    .div1 { grid-area: 1 / 1 / 2 / 4; }
-    .div2 {
-       grid-area: 2 / 1 / 7 / 2;
-      
-       }
-    .div3 { grid-area: 2 / 2 / 7 / 3; }
-    .div4 { grid-area: 2 / 3 / 7 / 4; }
 
+    .parent {
+        width: 100%;
+    }
 
+    .parent.image {
+        width: 100%;
+    }
 
-    @media screen and (max-width: 720px) {
-        .parent {
-          font-size: 70%;
-          height: auto;
-        }
-      }
-  
+    .media-wrapper {
+        width: 80%;
+    }
+
+    .image-media-wrapper {
+        width: 80%;
+    }
+}
+
+footer {
+    background-image: url("wavesfooter.jpg");
+    background-color: #cccccc;
+    color: white;
+}
